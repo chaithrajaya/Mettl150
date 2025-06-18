@@ -1,0 +1,32 @@
+class Character_Pattern{
+    public static void main(String[] args){
+        
+            for(char ch='E';ch>='A';ch--){
+                System.out.print(ch +" ");
+            }
+            System.out.println();
+            for(char ch='A';ch<='D';ch++){
+                System.out.print(ch +" ");
+            }
+            System.out.println();
+      for(char ch='D';ch>='B';ch--){
+                System.out.print(ch +" ");
+            }
+            System.out.println();
+            for(char ch='B';ch>='A';ch--){
+                System.out.print(ch +" ");
+            }
+            System.out.println();
+            System.out.print("A");
+}
+}
+
+
+
+OUTPUT:
+No-5
+E D C B A
+A B C D
+D C B
+B A
+A
