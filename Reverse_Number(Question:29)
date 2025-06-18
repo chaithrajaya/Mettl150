@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Mettl29{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number to reverse: ");
+int n = sc.nextInt();
+int rev=0;
+int remainder;
+while(n>0){
+remainder = n%10;
+rev = rev*10+remainder;
+n/=10;
+}
+System.out.println("The reversed number is: "+rev);
+}
+}
