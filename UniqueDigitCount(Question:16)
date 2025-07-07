@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.Scanner;
+public class UniqueDigitCount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        num = Math.abs(num);
+        HashSet<Integer> uniqueDigits = new HashSet<>();
+
+        if (num == 0) {
+            uniqueDigits.add(0);  // 0 is a digit
+        } else {
+            while (num > 0) {
+                int digit = num % 10;       // extract last digit
+                uniqueDigits.add(digit);    // add to set
+                num /= 10;                  // remove last digit
+            }
+        }
+
+        System.out.println("Count of unique digits: " + uniqueDigits.size());
+
+        sc.close();
+    }
+}
